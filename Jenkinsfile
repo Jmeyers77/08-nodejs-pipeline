@@ -7,7 +7,7 @@ pipeline {
         stage('increment version') {
             steps {
                 script {
-                    # enter app directory, because that's where package.json is located
+                    # enter app directory, because thats where package.json is located
                     dir("app") {
                         # update application version in the package.json file with one of these release types: patch, minor or major
                         # this will commit the version update
