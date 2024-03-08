@@ -40,7 +40,7 @@ pipeline {
         stage('commit version update') {
             steps {
                 script {
-                   // withCredentials([usernamePassword(credentialsId: 'gitlab-credentials', usernameVariable: 'USER', passwordVariable: 'PASS')]) {
+                     // withCredentials([usernamePassword(credentialsId: 'gitlab-credentials', usernameVariable: 'USER', passwordVariable: 'PASS')]) {
                         sh 'git config --global user.email "jenkins@example.com"'
                         sh 'git config --global user.name "jenkins"'
                         sh 'git remote set-url origin git@github.com:Jmeyers77/08-nodejs-pipeline.git'
